@@ -8,9 +8,11 @@
 }
 
 // VARIBLES
-$header_height: 60px;
+$header_height: 70px;
 // ICONS
 .icon_linkedin {background: url('../img/icon_linkedin.svg') no-repeat}
+.logo {background: url('../img/logo.svg') no-repeat}
+
 html {
   margin: 0;
   padding: 0;
@@ -26,14 +28,24 @@ a, a:visited,  {
   height: $header_height;
 }
 
+.fixed {
+  position: fixed !important;
+}
+
 header {
   height: $header_height;
   z-index: 999;
+  width: 100%;
   background: lightblue;
-  opacity: 0.9;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  bottom: 0;
+  a {
+    &:hover {
+      opacity: 0.8; 
+    }
+  }
   nav{
     width: 100%;
     max-width: 1050px;
@@ -43,7 +55,9 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     .logo {
-
+      margin: 10px 0;
+      display: block;
+      width: $header_height;
     }
     ul{
       list-style: none;
@@ -92,16 +106,16 @@ header {
 }
 
 main section {
-  box-sizing: border-box;
-  width: 90%;
-  max-width: 1050px;
-}
-section:not(#intro) {
   width: 100%;
   margin: 0 auto;
   background: pink;
   padding: 10px;
   border-bottom: 2px solid blue;
+  max-width: 1050px;
+  min-width: 300px;
+}
+section{
+  box-sizing: border-box;
 }
 
 #intro {
