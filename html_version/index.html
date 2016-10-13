@@ -9,6 +9,12 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicon.png"> <!-- 32px -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -36,28 +42,63 @@
       </header>
     </div>
   <main>
-    <section id="mini-skills">
+    <section id="mini-skills" class="dark">
+      <h2>Skills</h2>
+      <div>
         <div class="col">
-          <span class="icon">Icon</span>
+          <span class="icon icon_design"></span>
           <span class="title">Front-End</span>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nisi venenatis, congue magna sed, porttitor ipsum. Aenean nec velit. </p>
         </div>
-        <div class="col">Back-End</div>
-        <div class="col">Content Creation</div>
-        <div class="col">Team Orintated</div>
+        <div class="col">
+          <span class="icon icon_coding"></span>
+          <span class="title">Back-End</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nisi venenatis, congue magna sed, porttitor ipsum. Aenean nec velit. </p>
+        </div>
+        <div class="col">
+          <span class="icon icon_team"></span>
+          <span class="title">Team Orintated</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nisi venenatis, congue magna sed, porttitor ipsum. Aenean nec velit. </p>
+        </div>
+        <div class="col">
+          <span class="icon icon_cc"></span>
+          <span class="title">Content Creation</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nisi venenatis, congue magna sed, porttitor ipsum. Aenean nec velit. </p>
+        </div>
+      </div>
     </section>
-    <section id="mini-projects">
-      <p>
-        more content!
-      </p>
-      <div style="height: 600px;">push</div>
+    <section id="featured-projects">
+      <h2>Some of my latest work</h2>
+      <div class="owl-carousel owl-theme">
+        <div><a href="#"><img src="http://fillmurray.com/400/300" alt="" /></a></div>
+        <div><a href="#"><img src="http://fillmurray.com/400/300" alt="" /></a></div>
+        <div><a href="#"><img src="http://fillmurray.com/400/300" alt="" /></a></div>
+      </div>
     </section>
   </main>
+</div> <!-- page end -->
+<div class="page">
+  page 2
 </div>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-3.1.0.min.js"><\/script>')</script>
-    <script src="js/main.js"></script>
-
+<footer>
+  <div class="wrap">
+    <span class="logo"></span>
+      <div>
+        <nav>
+          <ul>
+            <a href=""><li>Projects</li></a>
+            <a href=""><li>About</li></a>
+            <a href=""><li>Timeline</li></a>
+            <a href=""><li>Contact</li></a>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#" title="Connect with me on Linkedin" target="_blank"><span class="icon_linkedin"></span></a>
+        </div>
+      </div>
+      <span class="copyright">&copy; Mitchell Williams 2016</span>
+  </div>
+</footer class="dark">
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

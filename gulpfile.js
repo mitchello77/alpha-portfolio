@@ -23,4 +23,5 @@ gulp.task('default', ['scss','browserSync'], function(){
   gulp.watch('html_version/scss/**/*.scss', ['scss']);
   gulp.watch("html_version/*.html").on('change', browserSync.reload);
   gulp.watch("html_version/js/*.js").on('change', browserSync.reload);
+  gulp.watch("html_version/img/*.*").on('change', browserSync.reload);
 });

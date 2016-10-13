@@ -8,4 +8,10 @@ $(function() {
       $('header').addClass('fixed');
     }
   });
+  $("#featured-projects .owl-carousel").owlCarousel({
+    margin: 20,
+    center: true,
+    dotsEach: true,
+    loop: true
+  });
 });

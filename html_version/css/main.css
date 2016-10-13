@@ -615,7 +615,7 @@ textarea {
     page-break-after: avoid; } }
 
 .page {
-  border-bottom: 5px solid maroon; }
+  margin-bottom: 50px; }
 
 .icon_linkedin {
   background: url("../img/icon_linkedin.svg") no-repeat; }
@@ -623,9 +623,25 @@ textarea {
 .logo {
   background: url("../img/logo.svg") no-repeat; }
 
+.icon_coding {
+  background: url("../img/icon_coding.svg") no-repeat; }
+
+.icon_design {
+  background: url("../img/icon_coding.svg") no-repeat; }
+
+.icon_team {
+  background: url("../img/icon_coding.svg") no-repeat; }
+
+.icon_cc {
+  background: url("../img/icon_coding.svg") no-repeat; }
+
 html {
   margin: 0;
   padding: 0; }
+
+body {
+  background: #ECF0F1;
+  text-rendering: optimizeLegibility; }
 
 a, a:visited {
   color: #000; }
@@ -637,11 +653,21 @@ a, a:visited {
 .fixed {
   position: fixed !important; }
 
+nav {
+  padding: 0 10px;
+  box-sizing: border-box; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    nav ul a {
+      text-decoration: none; }
+
 header {
   height: 70px;
   z-index: 999;
   width: 100%;
-  background: lightblue;
+  background: #2C3E50;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
@@ -649,11 +675,11 @@ header {
   -ms-flex-pack: center;
       justify-content: center;
   bottom: 0; }
-  header a:hover {
+  header .social a:hover, header .logo:hover {
     opacity: 0.8; }
   header nav {
     width: 100%;
-    max-width: 1050px;
+    max-width: 1200px;
     height: 100%;
     display: -ms-flexbox;
     display: flex;
@@ -668,29 +694,23 @@ header {
       display: block;
       width: 70px; }
     header nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      background: coral;
       height: 100%; }
       header nav ul a {
         padding: 0 20px;
         float: left;
         height: 100%;
-        display: block;
-        text-decoration: none;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center;
         box-sizing: border-box;
-        border-bottom: 2px solid transparent; }
+        border-bottom: 3px solid transparent; }
         header nav ul a:hover {
-          border-bottom-color: #fff; }
+          border-bottom-color: #E74C3C; }
         header nav ul a li {
           color: #fff;
           font-size: 18px;
-          margin-bottom: -2px; }
+          margin-bottom: -3px; }
     header nav .social {
       display: -ms-flexbox;
       display: flex;
@@ -700,8 +720,8 @@ header {
           align-items: center;
       height: 100%; }
       header nav .social a {
-        height: 32px;
-        width: 32px;
+        height: 28px;
+        width: 28px;
         display: block; }
         header nav .social a span {
           height: 100%;
@@ -709,17 +729,26 @@ header {
           display: block;
           color: #fff; }
 
-main section {
-  width: 100%;
+main {
+  max-width: 1200px;
+  min-width: 300px;
+  width: 90%;
   margin: 0 auto;
-  background: pink;
-  padding: 10px;
-  border-bottom: 2px solid blue;
-  max-width: 1050px;
-  min-width: 300px; }
+  background: #fafafa; }
+  main section {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    padding-bottom: 50px; }
+
+.dark {
+  background: #fafafa;
+  border-bottom: #dddddd solid 1px;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1); }
 
 section {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
 
 #intro {
   height: 100vh;
@@ -728,33 +757,80 @@ section {
   padding-bottom: 80px; }
 
 #mini-skills {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  #mini-skills .col {
-    max-width: 350px;
-    width: 100%;
-    min-width: 300px;
-    margin: 0 20px;
-    padding: 15px;
-    margin-top: 20px;
-    background: Green;
-    min-height: 100px;
-    margin-bottom: 20px;
+  width: 100%; }
+  #mini-skills div {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-align: center;
-        align-items: center;
-    box-sizing: border-box; }
-    #mini-skills .col .icon {
-      display: block; }
-    #mini-skills .col .title {
-      display: block; }
-    #mini-skills .col p {
+    width: 100%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #mini-skills div .col {
+      max-width: 400px;
+      width: 50%;
+      min-width: 300px;
+      margin: 0 20px;
+      padding: 15px;
+      min-height: 100px;
+      margin-bottom: 20px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-align: center;
+          align-items: center;
+      box-sizing: border-box;
+      border-radius: 15px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+      background: #fff; }
+      #mini-skills div .col .icon {
+        display: block;
+        width: 200px;
+        height: 80px;
+        background-size: contain;
+        background-position: center;
+        margin-bottom: 20px; }
+      #mini-skills div .col .title {
+        display: block; }
+      #mini-skills div .col p {
+        text-align: center; }
+
+footer {
+  width: 100%;
+  min-height: 20px;
+  background: #FFF;
+  border-top: #dddddd solid 1px;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1); }
+  footer .wrap {
+    width: 1200px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 10px 0; }
+    footer .wrap div {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      margin-bottom: 60px; }
+      footer .wrap div nav ul a {
+        float: left;
+        height: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        box-sizing: border-box; }
+        footer .wrap div nav ul a li {
+          color: #000;
+          font-size: 18px;
+          padding: 0 10px; }
+    footer .wrap .copyright {
       text-align: center; }
