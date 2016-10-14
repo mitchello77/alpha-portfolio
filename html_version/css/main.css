@@ -803,7 +803,7 @@ footer {
   border-top: #dddddd solid 1px;
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1); }
   footer .wrap {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
