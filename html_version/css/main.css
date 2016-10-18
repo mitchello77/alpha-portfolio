@@ -784,21 +784,35 @@ body.pg-loading {
   background: url("../img/icon_coding.svg") no-repeat; }
 
 .icon_team {
-  background: url("../img/icon_coding.svg") no-repeat; }
+  background: url("../img/icon_team.svg") no-repeat; }
 
 .icon_cc {
   background: url("../img/icon_coding.svg") no-repeat; }
 
 html {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 62.5%; }
 
 body {
   background: #ECF0F1;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; }
 
 a, a:visited {
   color: #000; }
+
+.loading-message {
+  color: #fff;
+  font-size: 1.3rem; }
 
 #nav {
   width: 100%;
@@ -843,7 +857,8 @@ header {
         flex-wrap: nowrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    header nav .logo {
+    header nav align
+.logo {
       margin: 10px 0;
       display: block;
       width: 70px; }
@@ -946,7 +961,8 @@ section {
         background-position: center;
         margin-bottom: 20px; }
       #mini-skills div .col .title {
-        display: block; }
+        display: block;
+        font-weight: 700; }
       #mini-skills div .col p {
         text-align: center; }
 

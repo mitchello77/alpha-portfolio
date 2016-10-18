@@ -8,6 +8,9 @@ $(function() {
       $('header').addClass('fixed');
     }
   });
+  //scroll Reveal
+  window.sr = ScrollReveal();
+  sr.reveal('#mini-skills .col',{origin: 'left', delay: '250', distance: '40px'});
   $("#featured-projects .owl-carousel").owlCarousel({
     margin: 20,
     center: true,
