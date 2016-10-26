@@ -11,6 +11,11 @@ $(function() {
   //scroll Reveal
   window.sr = ScrollReveal();
   sr.reveal('#mini-skills .col',{origin: 'left', delay: '250', distance: '40px'});
+
+  $('#before-after').imagesLoaded( function() {
+    $('#before-after').twentytwenty();
+  });
+
   $("#featured-projects .owl-carousel").owlCarousel({
     margin: 20,
     center: true,

@@ -3,6 +3,7 @@
 @import '_boilerplate';
 @import '_please-wait';
 @import "spinners/11-folding-cube";
+@import '_twentytwenty';
 
 // Delete Me
 .page {
@@ -18,11 +19,17 @@ $wrapper_width: 1200px;
 .icon_coding {background: url('../img/icon_coding.svg') no-repeat}
 .icon_design {background: url('../img/icon_coding.svg') no-repeat}
 .icon_team {background: url('../img/icon_team.svg') no-repeat}
-.icon_cc {background: url('../img/icon_coding.svg') no-repeat}
+.icon_cc {background: url('../img/icon_content.svg') no-repeat}
+
 html {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -61,6 +68,10 @@ a, a:visited,  {
   position: fixed !important;
 }
 
+.twentytwenty-overlay {
+  display: none !important;
+}
+
 nav {
   padding: 0 10px;
   box-sizing: border-box;
@@ -88,6 +99,11 @@ header {
       opacity: 0.8;
     }
   }
+  .logo {
+    margin: 10px 0;
+    display: block;
+    width: $header_height;
+  }
   nav{
     width: 100%;
     max-width: $wrapper_width;
@@ -96,12 +112,6 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align
-    .logo {
-      margin: 10px 0;
-      display: block;
-      width: $header_height;
-    }
     ul{
       height: 100%;
       a{
