@@ -14,6 +14,7 @@
 // VARIBLES
 $header_height: 70px;
 $wrapper_width: 1200px;
+
 // ICONS
 .icon_linkedin {background: url('../img/icon_linkedin.svg') no-repeat}
 .logo {background: url('../img/logo.svg') no-repeat}
@@ -21,8 +22,6 @@ $wrapper_width: 1200px;
 .icon_design {background: url('../img/icon_design.svg') no-repeat}
 .icon_team {background: url('../img/icon_team.svg') no-repeat}
 .icon_cc {background: url('../img/icon_content.svg') no-repeat}
-
-.hidden {display: none;}
 
 html {
   margin: 0;
@@ -38,7 +37,7 @@ html {
 body {
   background: #ECF0F1;
   text-rendering: optimizeLegibility;
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
@@ -49,8 +48,36 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
 
-h2 {
+h3 {
+    text-align: center;
+    position: relative;
+    font-size: 1.6rem;
+    color: #2C2F33;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
+}
+
+h3 span {
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.dark h3 span {
+  background-color: #fafafa;
+}
+
+h3:before {
+  background: #ccc;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 60%;
+  left: 20%;
 }
 
 a, a:visited,  {
@@ -153,13 +180,13 @@ main {
   background: #fafafa;
   section {
     width: 100%;
-    background: #fff;
+    background-color: #fff;
     padding: 10px;
     padding-bottom: 50px;
   }
 }
 .dark {
-  background: #fafafa;
+  background-color: #fafafa;
   border-bottom: #dddddd solid 1px;
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
 }
@@ -179,10 +206,10 @@ section{
   h1 {
     position: absolute;
     z-index: 999;
-    right: 10%;
+    right: 5%;
     top: 5%;
-    font-size: 70px;
     color: rgba(0,0,0,0.7);
+    width: 45%;
   }
   .scroll{
     position: absolute;
@@ -203,8 +230,8 @@ section{
   }
   .prompt {
     position: absolute;
-    left: 32%;
-    bottom: 48%;
+    left: 32.5%;
+    bottom: 48.8%;
     z-index: 99;
     color: rgba(255,255,255,0.6);
     font-size: 1.6rem;
@@ -298,6 +325,54 @@ footer {
     }
     .copyright {
       text-align: center;
+    }
+  }
+}
+
+#comment_form {
+  input, textarea {
+  	border: 1px solid #ccc;
+    font-size: 15px;
+  	padding: 8px 10px;
+  	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	border-radius: 5px;
+  	outline: 0;
+    width: 350px;
+  }
+  textarea {
+  	width: 100%;
+  }
+  input[type="submit"] {
+  	cursor: pointer;
+  	background: linear-gradient(to bottom, #efefef, #ddd);
+  	color: #333;
+  	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+  	border: 1px solid #ccc;
+    width: 100px;
+    margin: 0 auto !important;
+    display: block;
+  }
+
+  input[type="submit"]:hover {
+  	background: linear-gradient(to bottom, #eee, #ccc);
+  	border: 1px solid #bbb;
+  }
+
+  input[type="submit"]:active {
+    background: linear-gradient(to bottom, #ddd, #aaa);
+    border: 1px solid #999;
+  }
+  div {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  #comment_form {
+    input, textarea {
+      width: 100%;
     }
   }
 }

@@ -408,14 +408,6 @@ template {
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4; }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -1316,9 +1308,6 @@ body.pg-loading {
 .icon_cc {
   background: url("../img/icon_content.svg") no-repeat; }
 
-.hidden {
-  display: none; }
-
 html {
   margin: 0;
   padding: 0;
@@ -1332,7 +1321,6 @@ body {
   background: #ECF0F1;
   text-rendering: optimizeLegibility;
   font-size: 1.5em;
-  /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: 'Roboto', sans-serif; }
@@ -1340,6 +1328,33 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
+
+h3 {
+  text-align: center;
+  position: relative;
+  font-size: 1.6rem;
+  color: #2C2F33;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+h3 span {
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+  background-color: #fff; }
+
+.dark h3 span {
+  background-color: #fafafa; }
+
+h3:before {
+  background: #ccc;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 60%;
+  left: 20%; }
 
 a, a:visited {
   color: #000; }
@@ -1433,12 +1448,12 @@ main {
   background: #fafafa; }
   main section {
     width: 100%;
-    background: #fff;
+    background-color: #fff;
     padding: 10px;
     padding-bottom: 50px; }
 
 .dark {
-  background: #fafafa;
+  background-color: #fafafa;
   border-bottom: #dddddd solid 1px;
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1); }
 
@@ -1458,10 +1473,10 @@ section {
   #intro h1 {
     position: absolute;
     z-index: 999;
-    right: 10%;
+    right: 5%;
     top: 5%;
-    font-size: 70px;
-    color: rgba(0, 0, 0, 0.7); }
+    color: rgba(0, 0, 0, 0.7);
+    width: 45%; }
   #intro .scroll {
     position: absolute;
     width: 100%;
@@ -1478,8 +1493,8 @@ section {
         animation-play-state: paused; }
   #intro .prompt {
     position: absolute;
-    left: 32%;
-    bottom: 48%;
+    left: 32.5%;
+    bottom: 48.8%;
     z-index: 99;
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.6rem; }
@@ -1563,3 +1578,40 @@ footer {
           padding: 0 10px; }
     footer .wrap .copyright {
       text-align: center; }
+
+#comment_form input, #comment_form textarea {
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  outline: 0;
+  width: 350px; }
+
+#comment_form textarea {
+  width: 100%; }
+
+#comment_form input[type="submit"] {
+  cursor: pointer;
+  background: linear-gradient(to bottom, #efefef, #ddd);
+  color: #333;
+  text-shadow: 0px 1px 1px white;
+  border: 1px solid #ccc;
+  width: 100px;
+  margin: 0 auto !important;
+  display: block; }
+
+#comment_form input[type="submit"]:hover {
+  background: linear-gradient(to bottom, #eee, #ccc);
+  border: 1px solid #bbb; }
+
+#comment_form input[type="submit"]:active {
+  background: linear-gradient(to bottom, #ddd, #aaa);
+  border: 1px solid #999; }
+
+#comment_form div {
+  margin-bottom: 8px;
+  width: 100%; }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  #comment_form input, #comment_form textarea {
+    width: 100%; } }
