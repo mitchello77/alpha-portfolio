@@ -1274,22 +1274,31 @@ body.pg-loading {
   animation-name: bounceOutUp; }
 
 .icon_linkedin {
-  background: url("../img/icon_linkedin.svg") no-repeat; }
+  background: url("http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_linkedin.svg") no-repeat; }
 
 .logo {
-  background: url("../img/logo.svg") no-repeat; }
+  background: url("http://cdn.mitchell-williams.com.au/alpha-portfolio/img/logo.svg") no-repeat; }
 
 .icon_coding {
-  background: url("../img/icon_coding.svg") no-repeat; }
+  background: url("http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_coding.svg") no-repeat; }
 
 .icon_design {
-  background: url("../img/icon_design.svg") no-repeat; }
+  background: url("http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_design.svg") no-repeat; }
 
 .icon_team {
-  background: url("../img/icon_team.svg") no-repeat; }
+  background: url("http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_team.svg") no-repeat; }
 
 .icon_cc {
-  background: url("../img/icon_content.svg") no-repeat; }
+  background: url("http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_content.svg") no-repeat; }
+
+.portrait {
+  background: url("http://cdn.mitchell-williams.com.au/alpha-portfolio/img/portrait.png") no-repeat; }
+
+.github {
+  background: url("http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_github.svg") no-repeat; }
+
+.resume {
+  background: url("http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_resume.svg") no-repeat; }
 
 html {
   margin: 0;
@@ -1312,6 +1321,10 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
+
+h2 {
+  font-size: 6rem;
+  margin: 0.2em 0 0.2em 3rem; }
 
 h3 {
   text-align: center;
@@ -1433,8 +1446,10 @@ main {
   main section {
     width: 100%;
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
     padding-bottom: 50px; }
+  main section.tight {
+    padding-bottom: 20px; }
 
 .dark {
   background-color: #fafafa;
@@ -1523,6 +1538,76 @@ section {
         font-weight: 700; }
       #mini-skills div .col p {
         text-align: center; }
+
+#bio {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  #bio .col {
+    height: 450px;
+    width: 50%; }
+    #bio .col:nth-of-type(1) {
+      padding: 0 30px; }
+    #bio .col .profileimg {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      #bio .col .profileimg span {
+        display: block;
+        background-size: contain;
+        background-position: right bottom;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 30px;
+        bottom: -20px; }
+    #bio .col .subheading {
+      font-size: 2.5rem;
+      color: #2980B9;
+      font-weight: 400; }
+    #bio .col p:not(.subheading) {
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1.6em; }
+
+#external .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 30px; }
+  #external .row .col {
+    width: 50%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    #external .row .col .icon {
+      width: 100%;
+      height: 100%; }
+      #external .row .col .icon span {
+        display: block;
+        height: 250px;
+        width: 100%;
+        background-size: contain;
+        background-position: center center; }
+    #external .row .col p {
+      font-size: 2rem; }
+
+#calltoaction {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  #calltoaction p {
+    margin-top: 50px;
+    font-size: 2.5rem; }
 
 footer {
   width: 100%;

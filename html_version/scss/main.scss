@@ -11,12 +11,15 @@ $header_height: 70px;
 $wrapper_width: 1200px;
 
 // ICONS
-.icon_linkedin {background: url('../img/icon_linkedin.svg') no-repeat}
-.logo {background: url('../img/logo.svg') no-repeat}
-.icon_coding {background: url('../img/icon_coding.svg') no-repeat}
-.icon_design {background: url('../img/icon_design.svg') no-repeat}
-.icon_team {background: url('../img/icon_team.svg') no-repeat}
-.icon_cc {background: url('../img/icon_content.svg') no-repeat}
+.icon_linkedin {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_linkedin.svg') no-repeat}
+.logo {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/logo.svg') no-repeat}
+.icon_coding {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_coding.svg') no-repeat}
+.icon_design {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_design.svg') no-repeat}
+.icon_team {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_team.svg') no-repeat}
+.icon_cc {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_content.svg') no-repeat}
+.portrait {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/portrait.png') no-repeat}
+.github {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_github.svg') no-repeat}
+.resume {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_resume.svg') no-repeat}
 
 html {
   margin: 0;
@@ -42,6 +45,11 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+}
+
+h2 {
+  font-size: 6rem;
+  margin: 0.2em 0 0.2em 3rem;
 }
 
 h3 {
@@ -177,8 +185,11 @@ main {
   section {
     width: 100%;
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
     padding-bottom: 50px;
+  }
+  section.tight {
+    padding-bottom: 20px;
   }
 }
 .dark {
@@ -260,8 +271,6 @@ section{
         display: block;
         width: 200px;
         height: 80px;
-
-
         background-size: contain;
         background-position: center;
         margin-bottom: 20px;
@@ -274,6 +283,82 @@ section{
         text-align: center;
       }
     }
+  }
+}
+
+#bio {
+  display: flex;
+  flex-wrap: wrap;
+  .col {
+    height: 450px;
+    width: 50%;
+    &:nth-of-type(1){
+      padding: 0 30px;
+    }
+    .profileimg {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      span {
+        display: block;
+        background-size: contain;
+        background-position: right bottom;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 30px;
+        bottom: -20px;
+      }
+    }
+    .subheading {
+      font-size: 2.5rem;
+      color: #2980B9;
+      font-weight: 400;
+    }
+    p:not(.subheading) {
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1.6em;
+    }
+  }
+}
+
+#external {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 30px;
+    .col {
+      width: 50%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon {
+        width: 100%;
+        height: 100%;
+        span {
+          display: block;
+          height: 250px;
+          width: 100%;
+          background-size: contain;
+          background-position: center center;
+        }
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+#calltoaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin-top: 50px;
+    font-size: 2.5rem;
   }
 }
 
