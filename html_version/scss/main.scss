@@ -6,11 +6,6 @@
 @import '_twentytwenty';
 @import '_animate.min';
 
-// Delete Me
-.page {
-  margin-bottom: 50px;
-}
-
 // VARIBLES
 $header_height: 70px;
 $wrapper_width: 1200px;
@@ -41,6 +36,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5 {

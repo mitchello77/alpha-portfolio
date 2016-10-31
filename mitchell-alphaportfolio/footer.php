@@ -11,18 +11,25 @@
 
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mitchell-alphaportfolio' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mitchell-alphaportfolio' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'mitchell-alphaportfolio' ), 'mitchell-alphaportfolio', '<a href="http://mitchell-williams.com.au" rel="designer">Mitchell Williams</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
+	<footer class="dark">
+		<div class="wrap">
+			<span class="logo"></span>
+				<div>
+					<nav>
+						<ul>
+							<a href=""><li>Projects</li></a>
+							<a href=""><li>About</li></a>
+							<a href=""><li>Timeline</li></a>
+							<a href=""><li>Contact</li></a>
+						</ul>
+					</nav>
+					<div class="social">
+						<a href="#" title="Connect with me on Linkedin" target="_blank"><span class="icon_linkedin"></span></a>
+					</div>
+				</div>
+				<span class="copyright">&copy; Mitchell Williams 2016</span>
+		</div>
+	</footer>
 <?php wp_footer(); ?>
-
 </body>
 </html>

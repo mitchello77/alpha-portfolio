@@ -3,16 +3,16 @@ var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 var intropresent = false;
 var theater = theaterJS({"autoplay": false, "minSpeed": 60, "maxSpeed": 450});
 
-$(window).on('load', function() { //insync with preloader finish
+jQuery(window).on('load', function() { //insync with preloader finish
   if (intropresent == true) {
       theater.play();
-      $('.twentytwenty-handle').mousedown( function() {
-        $('.prompt').fadeOut();
+      jQuery('.twentytwenty-handle').mousedown( function() {
+        jQuery('.prompt').fadeOut();
       });
   };
 });
 
-$(function() {
+jQuery(document).ready(function( $ ) {
   // Varibles after DOM construction
   var objIntro = $('#intro');
   // -------------------
@@ -60,11 +60,11 @@ hideIntro = function(obj) {
     });
 }
 
-$.fn.extend({
+jQuery.fn.extend({
     animateCss: function (animationName) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
+            jQuery(this).removeClass('animated ' + animationName);
         });
     }
 });

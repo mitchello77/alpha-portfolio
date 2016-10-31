@@ -471,9 +471,6 @@ textarea {
   padding: 0.2em 0; }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
@@ -536,17 +533,6 @@ textarea {
 
 .clearfix:after {
   clear: both; }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
 
 /* ==========================================================================
    Print styles.
@@ -1287,9 +1273,6 @@ body.pg-loading {
 .bounceOutUp {
   animation-name: bounceOutUp; }
 
-.page {
-  margin-bottom: 50px; }
-
 .icon_linkedin {
   background: url("../img/icon_linkedin.svg") no-repeat; }
 
@@ -1323,7 +1306,8 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
