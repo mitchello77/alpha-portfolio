@@ -3,7 +3,6 @@
 @import '_boilerplate';
 @import '_please-wait';
 @import "spinners/11-folding-cube";
-@import '_twentytwenty';
 @import '_animate.min';
 
 // VARIBLES
@@ -11,15 +10,15 @@ $header_height: 70px;
 $wrapper_width: 1200px;
 
 // ICONS
-.icon_linkedin {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_linkedin.svg') no-repeat}
-.logo {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/logo.svg') no-repeat}
-.icon_coding {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_coding.svg') no-repeat}
-.icon_design {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_design.svg') no-repeat}
-.icon_team {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_team.svg') no-repeat}
-.icon_cc {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_content.svg') no-repeat}
-.portrait {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/portrait.png') no-repeat}
-.github {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_github.svg') no-repeat}
-.resume {background: url('http://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_resume.svg') no-repeat}
+.icon_linkedin {background: url('https://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_linkedin.svg') no-repeat}
+.logo {background: url('https://cdn.mitchell-williams.com.au/alpha-portfolio/img/logo.svg') no-repeat}
+.icon_coding {background: url('https://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_coding.svg') no-repeat}
+.icon_design {background: url('https://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_design.svg') no-repeat}
+.icon_team {background: url('https://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_team.svg') no-repeat}
+.icon_cc {background: url('https://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_content.svg') no-repeat}
+.portrait {background: url('https://cdn.mitchell-williams.com.au/alpha-portfolio/img/portrait.png') no-repeat}
+.github {background: url('https://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_github.svg') no-repeat}
+.resume {background: url('https://cdn.mitchell-williams.com.au/alpha-portfolio/img/icon_resume.svg') no-repeat}
 
 html {
   margin: 0;
